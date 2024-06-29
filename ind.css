@@ -183,7 +183,7 @@ html,body{
 } */
 @media(max-width:550px){
 .container{
-    height: 30%;
+    height: 50%;
 }
 .last{
     height: 25%;
