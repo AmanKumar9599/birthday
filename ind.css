@@ -134,7 +134,7 @@ html,body{
     height: 50px;
     width: 100px;
     background-color: green;
-    margin: 2%;
+    margin: 1%;
     border: 0;
     border-radius: 1rem;
     color: white;
@@ -150,6 +150,7 @@ html,body{
     
 }
 .try input{
+    margin-top:1%;
     background-color: blue;
 }
 .footer{
