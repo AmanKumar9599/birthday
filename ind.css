@@ -121,7 +121,7 @@ html,body{
     justify-content: center;
 }
 .last p{
-    margin-top: 4%;
+    margin-top: 1%;
     font-size: 150%;
     font-weight: 800;
     text-align: center;
@@ -188,6 +188,9 @@ html,body{
 .last{
     height: 25%;
 }
+    .last p{
+        margin-top:4%;
+    }
 .footer{
     height: 15%;
 }
