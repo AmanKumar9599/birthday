@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.heading{
+    height: 20%;
+    width: 100%;
+    font-size:300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+.container{
+    position: relative;
+    height: 50%;
+    width: 95%;
+    margin-left: 2%;
+    border: 2px solid grey;
+    border-radius: 1rem;
+}
+.date{
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    
+}
+.date input{
+    height: 40px;
+    width: 20%;
+    margin: 1%;
+    margin-left: 2.9%;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    border-radius: 1rem;
+    font-size: x-large;
+}
+.date1{
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    
+}
+.date1 input{
+    height: 40px;
+    width: 20%;
+    margin: 1%;
+    margin-left: 2.9%;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    border-radius: 1rem;
+    font-size: x-large;
+}
+.date2{
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    
+}
+.date2 input{
+    
+    height: 40px;
+    width: 20%;
+    margin: 1%;
+    margin-left: 2.9%;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    border-radius: 1rem;
+    font-size: x-large;
+}
+.date3{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    
+}
+.date3 input{
+    height: 40px;
+    width: 20%;
+    margin: 1%;
+    margin-left: 2.9%;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    border-radius: 1rem;
+    font-size: x-large;
+}
+.date4{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    
+}
+.date4 input{
+    height: 40px;
+    width: 20%;
+    margin: 1%;
+    margin-left: 2.9%;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    border-radius: 1rem;
+    font-size: x-large;
+}
+.last{
+    margin-top: 1%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.last p{
+    margin-top: 4%;
+    font-size: 150%;
+    font-weight: 800;
+    text-align: center;
+}
+.last .button{
+    align-items: center;
+    text-align: center;
+}
+.last input{
+    height: 50px;
+    width: 100px;
+    background-color: green;
+    margin: 2%;
+    border: 0;
+    border-radius: 1rem;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+#No{
+    background-color: red;
+}
+.try{
+    align-items: center;
+    text-align: center;
+    
+}
+.try input{
+    background-color: blue;
+}
+.footer{
+    background-color: white;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    color: grey;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+    border: 2px solid grey;
+}
+.footer span{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+}
+.day{
+    display:flex;
+    justify-content: center;
+    font-size: x-large;
+    display: none;
+}
+/* @media (width<=1400px){
+    .container{
+        height: 32%;
+    }
+} */
+@media(max-width:550px){
+.container{
+    height: 25%;
+}
+.last{
+    height: 25%;
+}
+.footer{
+    height: 20%;
+}
+}

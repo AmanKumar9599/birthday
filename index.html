@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirthDate Guesser</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="ind.css">
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20221008/original/pngtree-hand-drawing-birthday-icon-png-image_8664624.png">
+</head>
+<body>
+    <div class="heading">
+        Birthday-Date-Guesser
+    </div>
+    <div class="container">
+        <div class="date">
+            <div class="line1">
+                <input type="button" value="16">
+                <input type="button" value="17">
+                <input type="button" value="18">
+                <input type="button" value="19">
+            </div>
+            <div class="line2">
+                <input type="button" value="20">
+                <input type="button" value="21">
+                <input type="button" value="22">
+                <input type="button" value="23">
+            </div>
+            <div class="line3">
+                <input type="button" value="24">
+                <input type="button" value="25">
+                <input type="button" value="26">
+                <input type="button" value="27">
+            </div>
+            <div class="line4">
+                <input type="button" value="28">
+                <input type="button" value="29">
+                <input type="button" value="30">
+                <input type="button" value="31">
+            </div>
+        </div>
+        <div class="date1">
+            <div class="line1">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="10">
+                <input type="button" value="11">
+            </div>
+            <div class="line2">
+                <input type="button" value="12">
+                <input type="button" value="13">
+                <input type="button" value="14">
+                <input type="button" value="15">
+            </div>
+            <div class="line3">
+                <input type="button" value="24">
+                <input type="button" value="25">
+                <input type="button" value="26">
+                <input type="button" value="27">
+            </div>
+            <div class="line4">
+                <input type="button" value="28">
+                <input type="button" value="29">
+                <input type="button" value="30">
+                <input type="button" value="31">
+            </div>
+        </div>
+        <div class="date2">
+            <div class="line1">
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="7">
+            </div>
+            <div class="line2">
+                <input type="button" value="12">
+                <input type="button" value="13">
+                <input type="button" value="14">
+                <input type="button" value="15">
+            </div>
+            <div class="line3">
+                <input type="button" value="20">
+                <input type="button" value="21">
+                <input type="button" value="22">
+                <input type="button" value="23">
+            </div>
+            <div class="line4">
+                <input type="button" value="28">
+                <input type="button" value="29">
+                <input type="button" value="30">
+                <input type="button" value="31">
+            </div>
+        </div>
+        <div class="date3">
+            <div class="line1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="6">
+                <input type="button" value="7">
+            </div>
+            <div class="line2">
+                <input type="button" value="10">
+                <input type="button" value="11">
+                <input type="button" value="14">
+                <input type="button" value="15">
+            </div>
+            <div class="line3">
+                <input type="button" value="18">
+                <input type="button" value="19">
+                <input type="button" value="22">
+                <input type="button" value="23">
+            </div>
+            <div class="line4">
+                <input type="button" value="26">
+                <input type="button" value="27">
+                <input type="button" value="30">
+                <input type="button" value="31">
+            </div>
+        </div>
+        <div class="date4">
+            <div class="line1">
+                <input type="button" value="1">
+                <input type="button" value="3">
+                <input type="button" value="5">
+                <input type="button" value="7">
+            </div>
+            <div class="line2">
+                <input type="button" value="9">
+                <input type="button" value="11">
+                <input type="button" value="13">
+                <input type="button" value="15">
+            </div>
+            <div class="line3">
+                <input type="button" value="17">
+                <input type="button" value="19">
+                <input type="button" value="21">
+                <input type="button" value="23">
+            </div>
+            <div class="line4">
+                <input type="button" value="25">
+                <input type="button" value="27">
+                <input type="button" value="29">
+                <input type="button" value="31">
+            </div>
+        </div>
+    </div>
+    
+    <div class="last">
+        <p>Does this chart contains your birth day date?</p>
+        <div class="day" >
+            You have not been born yet!!(shi se Yes/No choose kro)
+        </div>
+        <div class="button">
+            <input class="btn1" type="button" value="YES" name="ans" onclick="switchZIndex()">
+            <input type="button" class="btn2" value="NO" name="ans" id="No">
+        </div>
+       <div class="try"> 
+        <a href="index.html"><input type="button" value="Try Again"></a>
+       </div>
+    </div>
+    <div class="footer">
+        <span class="material-symbols-outlined">
+            copyright
+        </span>
+        <p>2024 Aman. All Rights Reserved.</p> 
+    </div>
+    <script>
+        function switchZIndex() {
+            const divs = document.querySelectorAll('.container > div');
+            let maxZIndex = 0;
+            divs.forEach(div => {
+                const zIndex = parseInt(window.getComputedStyle(div).zIndex, 10);
+                if (zIndex > maxZIndex) {
+                    maxZIndex = zIndex;
+                }
+            });
+
+            divs.forEach(div => {
+                const zIndex = parseInt(window.getComputedStyle(div).zIndex, 10);
+                if (zIndex === maxZIndex) {
+                    div.style.zIndex = 1;
+                } else {
+                    div.style.zIndex = zIndex + 1;
+                }
+            });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const noButton = document.querySelector('input[value="NO"]');
+            noButton.addEventListener('click', switchZIndex);
+        });
+        
+        function switchZIndex() {
+            const divs = document.querySelectorAll('.container > div');
+            let maxZIndex = 0;
+            divs.forEach(div => {
+                const zIndex = parseInt(window.getComputedStyle(div).zIndex, 10);
+                if (zIndex > maxZIndex) {
+                    maxZIndex = zIndex;
+                }
+            });
+        
+            divs.forEach(div => {
+                const zIndex = parseInt(window.getComputedStyle(div).zIndex, 10);
+                if (zIndex === maxZIndex) {
+                    div.style.zIndex = 1;
+                } else {
+                    div.style.zIndex = zIndex + 1;
+                }
+            });
+        }
+
+        let count=0;
+        let bin='';
+        let a=document.querySelector(".btn1");
+        let a1=document.querySelector(".btn2");
+        let b=document.querySelector(".day");
+        let c=document.querySelector(".last");
+        let d=document.querySelector(".button");
+        let no=0;
+        a.addEventListener("click",function(){
+            bin+=1;
+            count+=1;
+            if(count=="5"){
+                const defaults = {
+                    spread: 360,
+                    ticks: 50,
+                    gravity: 0,
+                    decay: 0.94,
+                    startVelocity: 30,
+                    shapes: ["star"],
+                    colors: ["FFE400", "FFBD00", "E89400", "FFCA6C", "FDFFB8"],
+                  };
+                  
+                  function shoot() {
+                    confetti({
+                      ...defaults,
+                      particleCount: 40,
+                      scalar: 1.2,
+                      shapes: ["star"],
+                    });
+                  
+                    confetti({
+                      ...defaults,
+                      particleCount: 10,
+                      scalar: 0.75,
+                      shapes: ["circle"],
+                    });
+                  }
+                  
+                  setTimeout(shoot, 0);
+                  setTimeout(shoot, 100);
+                  setTimeout(shoot, 200);
+            b.style.display='block';
+            c.style.height='40%';
+            d.style.display='none';
+            count=0;
+            b.style.fontWeight="800"; 
+            b.style.fontSize ="200%";  
+            b.style.textAlign="center"
+            b.style.paddingTop="2%";
+            b.style.color='green';
+            b.innerHTML="Your Birthday date is :"+(parseInt(bin,2));
+            }
+        })
+        a1.addEventListener("click",function(){
+            bin+=0;
+            no+=1;
+            count+=1;
+            if(no=="5"){
+                b.style.display='block';
+                b.innerHTML="You have not been born yet!!(shi se Yes/No choose kro)";
+                b.style.color="red";
+                b.style.fontWeight="800";   
+                b.style.fontSize ="200%";
+                b.style.textAlign="center"
+                b.style.paddingTop="2%";
+                d.style.display='none';
+            }
+            else if(count=="5"){
+                const defaults = {
+                    spread: 360,
+                    ticks: 50,
+                    gravity: 0,
+                    decay: 0.94,
+                    startVelocity: 30,
+                    shapes: ["star"],
+                    colors: ["FFE400", "FFBD00", "E89400", "FFCA6C", "FDFFB8"],
+                  };
+                  
+                  function shoot() {
+                    confetti({
+                      ...defaults,
+                      particleCount: 40,
+                      scalar: 1.2,
+                      shapes: ["star"],
+                    });
+                  
+                    confetti({
+                      ...defaults,
+                      particleCount: 10,
+                      scalar: 0.75,
+                      shapes: ["circle"],
+                    });
+                  }
+                  
+                  setTimeout(shoot, 0);
+                  setTimeout(shoot, 100);
+                  setTimeout(shoot, 200);
+            b.style.display='block';
+            c.style.height="40%";
+            count=0;
+            let ans="Your Birthday date is :"+(parseInt(bin,2));
+            b.style.fontWeight="800";  
+            b.style.fontSize ="200%"; 
+            b.style.textAlign="center"
+            b.style.color='green';
+            b.innerHTML=ans;
+            d.style.display='none';
+            b.style.paddingTop="2%";
+            }
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
